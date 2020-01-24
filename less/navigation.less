@@ -1,1 +1,45 @@
 // Navigation code here
+
+.navigation{
+    display:flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background:#f4f4f4;
+    .center();
+
+
+    .logo{
+        font-size: 4rem;
+        padding-top:1%;
+    }
+
+    .attributes{
+        display:flex;
+        padding: 1%;
+        width:30%;
+        .center();
+        justify-content:center;
+        align-content:space-around;
+
+        @media @phone{
+            width:100%;
+            justify-content: space-evenly;
+            margin: 2% 0;
+            padding: 0 5%;
+        }
+       
+
+        a{
+            font-size: 1.6rem;
+            color:black;
+            text-decoration: none;
+            margin: 0 auto;
+
+            @media @phone{
+                margin:0;
+            }
+         
+            
+        }
+    }
+}
